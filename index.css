@@ -21,29 +21,229 @@ a{
     margin:20px 0px;
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-:root {
-  --banner-bg-color: #f2f2f2;
-  --border-seperate-color: #99acba;
-  --primary-font: "Poppins", sans-serif;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: var(--primary-font);
-  background-color: rgb(48, 47, 47);
-}
-.container-bg {
-  background-color: var(--banner-bg-color);
-  height: 100%;
-}
-.border-seperate {
-  border-right: 2px dashed var(--border-seperate-color);
-}
-.num {
-  font-size: 50px;
-}
-.percent {
-  font-size: 40px;
-}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: black;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    width: 1150px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .text-align {
+    text-align: justify;
+  }
+  .frontpage {
+    background-color: white;
+    border: 5px solid black;
+    width: 30cm;
+    height: 46cm;
+    padding: 20px;
+  }
+  
+  .main-div {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "date title followus";
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+  }
+  
+  #date {
+    grid-area: date;
+    text-align: justify;
+  }
+  
+  #title {
+    grid-area: title;
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong&display=swap");
+    font-family: "Noto Serif NP Hmong", serif;
+    font-size: 40px;
+    position: absolute;
+    left: 70px;
+    bottom: -47px;
+    margin-left: -30px;
+  }
+  
+  #followus {
+    grid-area: followus;
+    text-align: start;
+  }
+  
+  #line {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+  }
+  
+  #croma {
+    width: 30cm;
+    height: 5cm;
+  }
+  
+  #first-content {
+    display: grid;
+    border-bottom: 1px solid black;
+    grid-template-columns: 23% 15% 12% 12% 12% 12% 12%;
+    column-gap: 3px;
+    grid-template-rows: 4.5cm 10cm;
+    grid-template-areas:
+      "firstimg col-2 col-3-6 col-3-6 col-3-6 col-3-6 col-7"
+      "firstimg col-2 row-2-c3 secondimage secondimage secondimage col-7";
+  }
+  #firstimg {
+    grid-area: firstimg;
+    width: 250px;
+    height: 14cm;
+    margin-top: 20px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+  }
+  
+  #col-2 {
+    grid-area: col-2;
+    padding: 6px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+    font-size: large;
+    border-right: 1px solid black;
+  }
+  
+  .col-3-6 {
+    grid-area: col-3-6;
+    padding: 1px;
+  }
+  #subchild {
+    font-size: smaller;
+  }
+  
+  #col-7 {
+    grid-area: col-7;
+    text-align: center;
+    border-left: 1px solid black;
+  }
+  
+  .row-2-c3 {
+    grid-area: row-2-c3;
+    padding: 2px;
+  }
+  
+  #secondimage {
+    grid-area: secondimage;
+  }
+  #belowimg1 {
+    padding: 3px;
+    position: relative;
+    bottom: 7px;
+  }
+  
+  #belowimage2 {
+    position: relative;
+    top: 198px;
+    padding: 3px;
+  }
+  
+  #belowimg3 {
+    position: relative;
+    top: 196px;
+    padding: 6px;
+  }
+  
+  #thangam {
+    width: 80px;
+    height: 70px;
+  }
+  
+  #thangamtxt {
+    text-align: start;
+    font-size: small;
+    padding-left: 10px;
+  }
+  #thangamtxt2 {
+    font-size: small;
+  }
+  .secondcontent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "bike content";
+  }
+  
+  #bike {
+    width: 550px;
+    height: 780px;
+    grid-area: bike;
+    padding-right: 8px;
+    border-right: 1px solid black;
+  }
+  
+  #bikeright {
+    grid-area: content;
+  }
+  #instructor {
+    padding-left: 50px;
+    margin-bottom: 0px;
+  }
+  .split-4 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas: "1st 2nd 3rd 4th";
+    column-gap: 20px;
+    row-gap: 1px;
+    padding-left: 50px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+  }
+  
+  #1st {
+    grid-area: 1st;
+  }
+  
+  #2nd {
+    grid-area: 2nd;
+  }
+  
+  #3rd {
+    grid-area: 3rd;
+  }
+  
+  #4th {
+    grid-area: 4th;
+  }
+  
+  #rashmika {
+    position: relative;
+    bottom: 5px;
+    border: 2px solid black;
+    margin-top: 7px;
+    margin-left: 44px;
+    padding: 4px;
+    width: 500px;
+    height: 565px;
+  }
+  
+  #circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #back {
+    color: rgb(248, 66, 0);
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .info {
+      display: none;
+    }
+  }
